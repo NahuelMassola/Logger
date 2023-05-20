@@ -9,7 +9,7 @@ program.parse();
 const enviroment = program.opts().mode
 
 dotenv.config({
-  path: path.join(__dirname, enviroment == 'development' ? '../../.env.development' : '../../.env.productoion')
+  path: path.join(__dirname, enviroment == 'development' ? '../../.env.development' : '../../.env.production')
 })
 
 logger.info(`'MODE : ${process.env.ENVIROMENT}'`)
